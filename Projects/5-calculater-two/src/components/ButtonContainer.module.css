@@ -5,8 +5,52 @@
 }
 
 .button {
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
   margin: 10px;
   border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #fff;
+  position: relative;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.button::after,
+.button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background-image: linear-gradient(to top, red, blue); */
+  background-image: conic-gradient(
+    from var(--angle),
+    #ff4545,
+    #00ff99,
+    #006aff,
+    #ff0095
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  padding: 33px;
+  z-index: -3;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+/* .button::before {
+} */
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
 }

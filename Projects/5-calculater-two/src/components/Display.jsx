@@ -1,9 +1,14 @@
 import styles from "./Display.module.css";
 
-let Diplay = () => {
+let Diplay = ({ DisplayValue }) => {
   return (
     <>
-      <input className={styles.diplay} type="text" />
+      <input
+        className={styles.diplay}
+        type="text"
+        value={DisplayValue}
+        readOnly
+      />
     </>
   );
 };

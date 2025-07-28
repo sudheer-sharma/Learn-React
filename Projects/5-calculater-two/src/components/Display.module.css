@@ -4,4 +4,9 @@
   height: 60px;
   border-radius: 5px;
   font-size: 25px;
+  padding-left: 0.5em;
+  border: none;
+  outline: none;
+  background: #ecf0f3;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
 }

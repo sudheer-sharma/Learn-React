@@ -1,0 +1,10 @@
+.welcome {
+  width: 75%;
+  min-width: 200px;
+  padding: 15px;
+  margin-top: 50px;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+  /* box-shadow: 8px 8px 20px #ecf0f3, inset -8px -8px 20px rgb(137, 125, 125); */
+}
